@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='cs'>
+
+<head>
+    <title>Redirecting...</title>
+    <meta charset='utf-8'>
+</head>
+
+<body>
+    <div class="container">
+
+        <p>Redirecting...</p>
+
+        <script>
+            // Function to redirect to the new domain while preserving the path
+            function searchRedirect() {
+                // Get the current URL
+                var currentUrl = window.location.href;
+
+                // Replace "search.fkomarek.eu/" with "fkomarek.eu"
+                var newUrl = currentUrl.replace("search.fkomarek.eu/", "search.davidovski.xyz/search.php?q=");
+
+                // Redirect to the new URL
+                window.location.href = newUrl;
+            }
+
+            // Get the current domain
+            var currentDomain = window.location.hostname;
+
+            // Check if the current domain is "filip.pkomarek.cz"
+            if (currentDomain === "search.fkomarek.eu") {
+                // Call the function to redirect to the new domain
+                searchRedirect();
+            }
+        </script>
+    </div>
+</body>
+
+</html>
