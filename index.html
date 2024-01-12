@@ -53,11 +53,11 @@
             var currentUrl = window.location.href;
 
             // Check domain and redirect
-            if (currentUrl === "https://search.fkomarek.eu/" || currentUrl === "http://search.fkomarek.eu/") {
-                window.location.href = "https://search.davidovski.xyz/"
+            if (currentUrl.includes("search.fkomarek.eu/?q=")) {
+                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "search.davidovski.xyz/search.php?q=");
             }
             else if (currentDomain === "search.fkomarek.eu") {
-                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "search.davidovski.xyz/search.php?q=");
+                window.location.href = currentUrl.replace("search.fkomarek.eu", "search.davidovski.xyz");
             }
         </script>
     </div>
