@@ -54,10 +54,10 @@
 
             // Check domain and redirect
             if (currentUrl.includes("search.fkomarek.eu/?q=")) {
-                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "www.startpage.com/sp/search?prfe=a150d21e36dd3ce7b1e9af95e2506d23044b7f3e8d8d65104dba5e9a96fcaecb617e66cfc60d33853c4cf77447f81fd84d524df0bee149322dc7df1a98197728a71f944cf333f51b0f&sc=fFJw7dX4U2kI20&query=");
+                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "www.startpage.com/sp/search?prfe=1e8133b0ebcb05953c921509f24e2610c0eee614aabdccbab70d8d638f15d26344cc42c290db041b4e359ef75a16e3bbe61e751ec2e0f2a95bc3f7b8fa85f5b63bcf245b63daf2c6a3d7&sc=fFJw7dX4U2kI20&query=");
             }
             else if (currentDomain === "search.fkomarek.eu") {
-                window.location.href = currentUrl.replace("search.fkomarek.eu", "startpage.com");
+                window.location.href = currentUrl.replace("search.fkomarek.eu", "www.startpage.com/do/mypage.pl?prfe=1e8133b0ebcb05953c921509f24e2610c0eee614aabdccbab70d8d638f15d26344cc42c290db041b4e359ef75a16e3bbe61e751ec2e0f2a95bc3f7b8fa85f5b63bcf245b63daf2c6a3d7");
             }
             else if (currentDomain === "invidious.fkomarek.eu") {
                 window.location.href = currentUrl.replace("invidious.fkomarek.eu", "invidious.private.coffee");
