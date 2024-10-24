@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>tor.search.fkomarek.eu</ShortName>
-  <Description>tor - redirect to my favourite search engine</Description>
-  <InputEncoding>UTF-8</InputEncoding>
-  <Url type="text/html" template="https://tor.search.fkomarek.eu/?q={searchTerms}"/>
-  <Image height="16" width="16" type="image/x-icon">https://fkomarek.eu/favicon.ico</Image>
-</OpenSearchDescription>
