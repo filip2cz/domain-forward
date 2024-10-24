@@ -53,13 +53,13 @@
 
             // Check domain and redirect
             if (currentUrl.includes("search.fkomarek.eu/?q=")) {
-                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "https://search.brave.com/search?region=none&theme=dark&safesearch=off&browser_location=none&q=");
+                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "search.brave.com/search?region=none&theme=dark&safesearch=off&browser_location=none&q=");
             }
             else if (currentUrl.includes("search.fkomarek.eu/")) {
-                window.location.href = currentUrl.replace("search.fkomarek.eu/", "https://search.brave.com/search?region=none&theme=dark&safesearch=off&browser_location=none&q=");
+                window.location.href = currentUrl.replace("search.fkomarek.eu/", "search.brave.com/search?region=none&theme=dark&safesearch=off&browser_location=none&q=");
             }
             else if (currentDomain === "search.fkomarek.eu") {
-                window.location.href = currentUrl.replace("search.fkomarek.eu", "https://search.brave.com/search?region=none&theme=dark&safesearch=off&browser_location=none");
+                window.location.href = currentUrl.replace("search.fkomarek.eu", "search.brave.com/search?region=none&theme=dark&safesearch=off&browser_location=none");
             }
             else if (currentDomain === "invidious.fkomarek.eu") {
                 window.location.href = currentUrl.replace("invidious.fkomarek.eu", "invidious.jing.rocks");
