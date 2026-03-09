@@ -57,10 +57,10 @@
 
             // Check domain and redirect
             if (currentUrl.includes("search.fkomarek.eu/?q=")) {
-                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "https://www.google.com/search?udm=web&q=");
+                window.location.href = currentUrl.replace("search.fkomarek.eu/?q=", "www.google.com/search?udm=web&q=");
             }
             else if (currentUrl.includes("search.fkomarek.eu/")) {
-                window.location.href = currentUrl.replace("search.fkomarek.eu/", "https://www.google.com/search?udm=web&q=");
+                window.location.href = currentUrl.replace("search.fkomarek.eu/", "www.google.com/search?udm=web&q=");
             }
             else if (currentDomain === "search.fkomarek.eu") {
                 window.location.href = currentUrl.replace("search.fkomarek.eu", "www.startpage.com/do/mypage.pl?prfe=1e8133b0ebcb05953c921509f24e2610c0eee614aabdccbab70d8d638f15d26344cc42c290db041b4e359ef75a16e3bbe61e751ec2e0f2a95bc3f7b8fa85f5b63bcf245b63daf2c6a3d7");
